@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>spark windows 开发环境 | Hexo</title>
+  <title>java-spark | Hexo</title>
   <meta name="keywords" content="">
-  <meta name="description" content="spark windows 开发环境 | Hexo">
+  <meta name="description" content="java-spark | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="spark java 项目创建一个 maven 项目，对天龙八部进行分词统计 pom.xml 123456789101112      &lt;!-- spark api --&gt;&lt;dependency&gt;    &lt;groupId&gt;org.apache.spark&lt;&#x2F;groupId&gt;    &lt;artifactId&gt;spark-core_2">
 <meta property="og:type" content="article">
@@ -255,9 +255,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-spark/spark-windows-开发环境" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-spark/java-spark" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">spark windows 开发环境</h1>
+        <h1 class="article-title">java-spark</h1>
     
     <div class="article-meta">
         
@@ -273,7 +273,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-01-29 19:58:49'>2020-01-29 19:01</time>
+        创建时间:<time class="date" title='更新时间: 2020-02-05 15:46:55'>2020-02-05 15:21</time>
         
     </div>
     <div class="article-meta">
@@ -295,7 +295,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#软件版本"><span class="toc-text">软件版本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#软件下载"><span class="toc-text">软件下载</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#解压软件"><span class="toc-text">解压软件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#winutils-使用"><span class="toc-text">winutils 使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#环境变量"><span class="toc-text">环境变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装完成"><span class="toc-text">安装完成</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#通过-cmd-打开-sprak-交互命令窗口"><span class="toc-text">通过 cmd 打开 sprak 交互命令窗口</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#spark-java-项目"><span class="toc-text">spark java 项目</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -311,16 +311,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="软件版本"><a href="#软件版本" class="headerlink" title="软件版本"></a>软件版本</h3><p>spark : 2.4.4</p>
-<p>hadoop : 2.7.7</p>
-<h3 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a>软件下载</h3><p>spark: <a href="http://spark.apache.org/downloads.html" target="_blank" rel="noopener">http://spark.apache.org/downloads.html</a></p>
-<p>hadoop: <a href="https://archive.apache.org/dist/hadoop/common/hadoop-2.7.7/hadoop-2.7.7.tar.gz" target="_blank" rel="noopener">https://archive.apache.org/dist/hadoop/common/hadoop-2.7.7/hadoop-2.7.7.tar.gz</a></p>
-<p>hadoop windows 版工具: <a href="https://gitee.com/renliguo/apache-hadoop-3.1.1-winutils/raw/master/bin/winutils.exe" target="_blank" rel="noopener">https://gitee.com/renliguo/apache-hadoop-3.1.1-winutils/raw/master/bin/winutils.exe</a></p>
-<h3 id="解压软件"><a href="#解压软件" class="headerlink" title="解压软件"></a>解压软件</h3><h3 id="winutils-使用"><a href="#winutils-使用" class="headerlink" title="winutils 使用"></a>winutils 使用</h3><p>wintutils.exe 放置 %HADOOP_HOME%/bin 目录下</p>
-<h3 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h3><p>配置 spark home<br><img src="/img/spark_home.png" alt="spark home"><br>配置 hadoop home<br><img src="/img/hadoop_home.png" alt="hadoop home"><br>配置 spark &amp; hadoop path<br><img src="/img/window_env.png" alt="window path"></p>
-<h3 id="安装完成"><a href="#安装完成" class="headerlink" title="安装完成"></a>安装完成</h3><h3 id="通过-cmd-打开-sprak-交互命令窗口"><a href="#通过-cmd-打开-sprak-交互命令窗口" class="headerlink" title="通过 cmd 打开 sprak 交互命令窗口"></a>通过 cmd 打开 sprak 交互命令窗口</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\Administrator&gt;spark-shell</span><br></pre></td></tr></table></figure>
-<p><img src="/img/spark-shell.png" alt="cmd"></p>
-<p>很好没有报错。到处配置完成!!!</p>
+        <h3 id="spark-java-项目"><a href="#spark-java-项目" class="headerlink" title="spark java 项目"></a>spark java 项目</h3><p>创建一个 maven 项目，对天龙八部进行分词统计</p>
+<p>pom.xml</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">      &lt;!-- spark api --&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.apache.spark&lt;&#x2F;groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;spark-core_2.11&lt;&#x2F;artifactId&gt;</span><br><span class="line">    &lt;version&gt;2.4.4&lt;&#x2F;version&gt;</span><br><span class="line">&lt;&#x2F;dependency&gt;</span><br><span class="line">      &lt;!-- 中文分词器 --&gt;</span><br><span class="line">      &lt;dependency&gt;</span><br><span class="line">          &lt;groupId&gt;org.ansj&lt;&#x2F;groupId&gt;</span><br><span class="line">          &lt;artifactId&gt;ansj_seg&lt;&#x2F;artifactId&gt;</span><br><span class="line">          &lt;version&gt;5.1.1&lt;&#x2F;version&gt;</span><br><span class="line">      &lt;&#x2F;dependency&gt;</span><br></pre></td></tr></table></figure>
+
+
+<p>SparkApplication.java</p>
+<p>main 方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">        SparkConf conf &#x3D; new SparkConf().setMaster(&quot;local&quot;).setAppName(&quot;Word Count&quot;);</span><br><span class="line">        &#x2F;&#x2F; Create a Java version of the Spark Context</span><br><span class="line">        JavaSparkContext sc &#x3D; new JavaSparkContext(conf);</span><br><span class="line"></span><br><span class="line">        &#x2F;&#x2F; Load the text into a Spark RDD, which is a distributed representation of each line of text</span><br><span class="line">        JavaRDD&lt;String&gt; textFile &#x3D; sc.textFile(&quot;166956.txt&quot;);&#x2F;&#x2F;166956.txt 为天龙八部的txt 小说</span><br><span class="line">        </span><br><span class="line">        JavaPairRDD&lt;String, Integer&gt; counts &#x3D; textFile</span><br><span class="line">        		.flatMap(s -&gt; &#123;</span><br><span class="line">        			Result res &#x3D; ToAnalysis.parse(s);</span><br><span class="line">        			List&lt;String&gt; list &#x3D; new ArrayList&lt;&gt;();</span><br><span class="line">        			res.forEach(re -&gt; list.add(re.getName()));</span><br><span class="line">        			return list.iterator();</span><br><span class="line">        		&#125;)</span><br><span class="line">&#x2F;&#x2F;                .flatMap(s -&gt; Arrays.asList(s.split(&quot; &quot;)).iterator())</span><br><span class="line">                .mapToPair(word -&gt; new Tuple2&lt;&gt;(word, 1))</span><br><span class="line">                .reduceByKey((a, b) -&gt; a + b);</span><br><span class="line">        counts.foreach(p -&gt; System.out.println(p));</span><br><span class="line">        System.out.println(&quot;Total words: &quot; + counts.count());</span><br><span class="line">        </span><br><span class="line">        FileUtils.deleteDirectory(new File(&quot;shakespeareWordCount&quot;));</span><br><span class="line">        counts.saveAsTextFile(&quot;shakespeareWordCount&quot;);&#x2F;&#x2F; 保存统计结果</span><br></pre></td></tr></table></figure>
+
+
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。 </span>
@@ -330,12 +330,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>spark windows 开发环境</p>
+    <p><span class="copy-title">文章标题:</span>java-spark</p>
     
     <p><span class="copy-title">本文作者:</span><a  title="Simon Liang">Simon Liang</a></p>
-    <p><span class="copy-title">发布时间:</span>2020-01-29, 19:01:20</p>
-    <p><span class="copy-title">最后更新:</span>2020-01-29, 19:58:49</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/01/29/spark/spark-windows-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" title="spark windows 开发环境">http://yoursite.com/2020/01/29/spark/spark-windows-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</a>
+    <p><span class="copy-title">发布时间:</span>2020-02-05, 15:21:23</p>
+    <p><span class="copy-title">最后更新:</span>2020-02-05, 15:46:55</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/02/05/spark/java-spark/" title="java-spark">http://yoursite.com/2020/02/05/spark/java-spark/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
